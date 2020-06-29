@@ -44,5 +44,29 @@
 }
 .subheader {
     height: 50px;
+    padding: 12px 0;
     background-color: #eba56c;
+}
+.subheader_geoposition_city {
+    color: #ffffff;
+    font-size: 14px;
+}
+.subheader_subscribe_link {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.subheader .subheader_socials_list {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.subheader .subheader_socials_item {
+    margin-left: 10px;
+}
+.subheader .subheader_socials_item a {
+    color: #ffffff;
+}
+.subheader .subheader_socials_item a img {
+    max-width: 28px;
 }
