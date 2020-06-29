@@ -2,11 +2,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 .header {
-    height: 100px;
+    height: 120px;
 }
 .header .header_logo {
     display: block;
-    margin-top: 15px;
+    margin-top: 30px;
     font-size: 40px;
     font-weight: 800;
     color: #eba56c;
@@ -14,10 +14,25 @@
 .header .header_logo img {
     max-width: 100%;
 }
+.header .header_search {
+    height: 36px;
+    width: 100%;
+    margin-top: 43px;
+    padding: 0 22px;
+    border-radius: 8px;
+    border: 0.1px solid #cecece;
+    font-size: 14px;
+}
+
+.header .header_search_icon {
+    position: absolute;
+    bottom: 49px;
+    right: 28px;
+}
 .menu {
     display: flex;
     justify-content: space-around;
-    padding: 38px 0;
+    padding: 48px 0;
     margin: 0;
     list-style-type: none;
 }
