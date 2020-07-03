@@ -1,6 +1,7 @@
 $main_color: #eba56c
 $second_color: #b36b30
 $grey_color: #cecece
+$darkgrey_color: #343434
 	
 *
 	font-family: 'Open Sans', sans-serif
@@ -9,10 +10,13 @@ $grey_color: #cecece
 	height: 120px
 	&_logo
 		display: block
+		width: 250px
 		margin-top: 30px
 		font-size: 40px
 		font-weight: 800
 		color: $main_color
+		img
+			width: 100%
 	img
 		max-width: 100%
 	&_search
@@ -27,7 +31,26 @@ $grey_color: #cecece
 			position: absolute
 			bottom: 49px
 			right: 28px
-
+.subheader_social_icon
+	fill: #ffffff
+	height: 28px 
+	width: 28px
+	transition: 0.3s all
+	&.fb:hover
+		fill: #3b5998
+		transition: 0.3s all
+	&.ig:hover
+		fill: #e1306C
+		transition: 0.3s all
+	&.tw:hover
+		fill: #00acee
+		transition: 0.3s all
+	&.vk:hover
+		fill: #4c75a3
+		transition: 0.3s all
+	&.yt:hover
+		fill: #c4302b
+		transition: 0.3s all
 .section
 	&_header
 		height: 45px
@@ -35,7 +58,7 @@ $grey_color: #cecece
 	&_title
 		display: inline-block
 		font-size: 30px
-		color: #343434
+		color: $darkgrey_color
 		font-weight: 800
 		vertical-align: middle
 		&_block
@@ -88,10 +111,15 @@ $grey_color: #cecece
 	margin: 0
 	list-style-type: none
 	&_link
-		color: #343434
+		color: $darkgrey_color
 		font-size: 12px
 		font-weight: 600
 		text-transform: uppercase
+		transition: 0.3s all
+		&:hover
+			text-decoration: none
+			color: $second_color
+			transition: 0.3s all
 
 .subheader
 	height: 50px
@@ -241,19 +269,39 @@ $grey_color: #cecece
 			background: url('../img/270px-Murphys.jpg') center (center / cover) no-repeat
 		&_7 .styles_item_img
 			background: url('../img/hof.jpg') center (center / cover) no-repeat
-		&_8 .styles_item_img
-			background: url('../img/food-3147953_960_720.jpg') center (center / cover) no-repeat
+		&_8
+			position: relative
+			& .styles_item_subtitle
+				position: absolute
+				top: 32%
+				left: 50%
+				display: inline-block
+				text-align: center
+				text-transform: uppercase
+				color: $main_color
+				font-size: 22px
+				font-weight: 400
+				margin: 0 0 0 -55px
+			& .styles_item_img
+				background: #ffe3cc
+				&::before
+					background: none
+		&_8:hover .styles_item_img::before
+			background: rgba(0,0,0,0.1)
+			
+			
 		&_subtitle
 			margin-top: 14px
 			font-size: 19px
 			font-weight: 700
-			color: #343434
+			color: $darkgrey_color
 			line-height: 25px
 			transition: 0.3s all
 		&_country
 			margin-top: 16px
 			font-size: 14px
 			font-weight: 200
-			color: #343434
+			color: $darkgrey_color
 			line-height: 25px
 			transition: 0.3s all
+
