@@ -44,7 +44,7 @@
         justify-content: center
         align-items: center
         flex-direction: column
-        background-color: rgba(0,0,0,0.5)
+        background-color: rgba(0,0,0,0.85)
         z-index: 5
         transition: 0.7s all
         &_active
@@ -88,3 +88,21 @@
     .news
         &_item
             max-width: 100%
+
+@media (max-width: 575px)
+    .header
+        &_search
+            margin-top: 33px
+            &_icon
+                bottom: 8px
+    .hamburger
+        top: 67px
+    .subheader
+        .container
+            display: none
+    
+    .news
+        padding: 35px 0
+        &_item
+            height: 300px
+            padding: 115px 15px 0
