@@ -1,0 +1,26 @@
+.carousel
+    position: relative
+    &_inner_styles, &_inner_countries
+        position: initial
+
+.slick-prev, .slick-next
+    position: absolute
+    border: none
+    background-color: transparent
+    top: 4px
+    right: 60px
+    height: 36px
+    width: 43px
+    &:hover img
+         opacity: 0.9
+    img
+        height: 19px
+        opacity: 0.6
+        transition: 0.3s all
+
+.slick-next
+    right: 17px
+    
+.slick-disabled 
+    opacity: 0.3
+    pointer-events:none
