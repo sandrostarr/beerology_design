@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="shortcut icon" href="icons/favicon/light/favicon-16x16.png" type="image/png">
 </head>
@@ -175,17 +176,17 @@
     </section>
     
     <section class="styles">
-        <div class="container">
+        <div class="container carousel">
             <div class="section_header">
                 <div class="styles_block section_title_block"></div>
                 <h2 class="section_title">Виды пива</h2>
                 <a class="section_openall" href="#">Открыть все</a>
                 <div class="section_arrows">
-                    <a href="#" class="section_arrows_left"><</a>
-                    <a href="#" class="section_arrows_right">></a>
+                    <!-- <a href="#" class="section_arrows_left"><</a>
+                    <a href="#" class="section_arrows_right">></a> -->
                 </div>
             </div>
-            <div class="row">
+            <div class="row carousel_inner">
                 <div class="col-md-3">
                     <a href="#">
                         <div class="styles_item styles_item_1">
@@ -265,6 +266,10 @@
 
     <address></address>
     <footer></footer>
+ 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

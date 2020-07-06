@@ -15,3 +15,36 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
+
+$(document).ready(function(){
+    $('.carousel_inner').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrows/arrow-left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/arrows/arrow-right.png"></button>',
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              },]
+      });
+  });
