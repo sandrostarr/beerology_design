@@ -387,10 +387,6 @@
 	&_logo
 		display: block
 		width: 100%
-		margin-top: 30px
-		font-size: 40px
-		font-weight: 800
-		color: $main_color
 		img
 			width: 100%
 	.socials
@@ -398,7 +394,22 @@
 		width: 32px
 	&_socials
 		&_list
-			padding: 8px 0 0
+			padding: 16px 0 0
 			display: flex
 			justify-content: space-between
 			list-style-type: none
+	&_search
+		&_title
+			font-size: 12px
+			color: #ffffff
+			font-weight: 600
+			text-transform: uppercase
+
+	.menu
+		flex-direction: column
+		padding: 0
+		&_link
+			color: #fff
+			line-height: 28px
+			&:hover
+				color: $second_color
