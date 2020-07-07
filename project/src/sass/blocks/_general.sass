@@ -381,16 +381,16 @@
 
 .footer
 	margin-top: 90px
-	min-height: 255px
+	min-height: 245px
 	background-color: $main-color
-	padding: 50px 0 55px
+	padding: 55px 0
 	&_logo
 		display: block
 		width: 100%
 		img
 			width: 100%
 	.socials
-		height: 32px 
+		height: 32px
 		width: 32px
 	&_socials
 		&_list
@@ -398,12 +398,35 @@
 			display: flex
 			justify-content: space-between
 			list-style-type: none
-	&_search
+	&_subscribe
 		&_title
 			font-size: 12px
 			color: #ffffff
 			font-weight: 600
 			text-transform: uppercase
+			text-align: center
+		&_input
+			height: 42px
+			width: 100%
+			margin-top: 18px
+			padding: 0 22px
+			border-radius: 8px
+			border: none
+			font-size: 14px
+		&_submit
+			margin-top: 12px
+			height: 42px
+			width: 100%
+			color: #ffffff
+			border-radius: 8px
+			border: 1px solid #fff
+			background-color: $main-color
+			font-size: 12px
+			text-transform: uppercase
+			transition: 0.5s all
+			&:hover
+				background-color: $second_color
+				//border: none
 
 	.menu
 		flex-direction: column
@@ -413,3 +436,11 @@
 			line-height: 28px
 			&:hover
 				color: $second_color
+
+.subfooter
+	height: 50px
+	background-color: $second_color
+	padding: 14px 0
+	&_copyright
+		font-size: 14px
+		color: #ffffff

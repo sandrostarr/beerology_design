@@ -33,6 +33,22 @@
             &_link
                 font-size: 11px
 
+    .footer 
+        .socials 
+            height: 26px
+            width: 26px
+        &_subscribe
+            &_title
+                font-size: 11px
+            &_input
+                height: 36px
+                font-size: 12px
+                margin-top: 12px
+            &_submit
+                height: 36px
+                font-size: 12px
+                margin-top: 8px
+
 @media (max-width: 767px)
     .menu
         position: fixed
@@ -89,10 +105,26 @@
         &_item
             max-width: 100%
 
+    .footer 
+        .socials 
+            height: 26px
+            width: 26px
+        &_subscribe
+            &_title
+                font-size: 11px
+            &_input
+                height: 30px
+                font-size: 12px
+                margin-top: 12px
+            &_submit
+                height: 30px
+                font-size: 10px
+                margin-top: 8px
+
 @media (max-width: 575px)
     .header
         &_search
-            margin-top: 33px
+            margin-top: 37px
             &_icon
                 bottom: 8px
     .hamburger
@@ -101,6 +133,10 @@
         .container
             display: none
     
+    .section
+        &_openall
+            display: none
+
     .news
         padding: 35px 0
         &_item
@@ -115,3 +151,24 @@
             padding: 5px 0
         &_link
             display: block
+
+    .footer 
+        &_socials
+            &_list
+                padding: 10px 0 0
+        &_subscribe
+            &_title
+                margin-top: 18px
+                font-size: 11px
+            &_input
+                height: 36px
+                font-size: 12px
+                margin-top: 12px
+            &_submit
+                height: 36px
+                font-size: 12px
+                margin-top: 10px
+        
+    .subfooter
+        &_copyright
+            text-align: center
