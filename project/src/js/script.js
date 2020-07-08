@@ -75,5 +75,13 @@ $(document).ready(function(){
                     slidesToScroll: 2
                 }
             },]
-      });
-  });
+    });
+
+
+    $('[data-modal=subscribe]').on('click', function() {
+        $('.overlay, #subscribe').fadeIn();
+    });
+    $('.modal_close,').on('click', function() {
+        $('.overlay, #subscribe').fadeOut();
+    });
+});
