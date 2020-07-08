@@ -81,7 +81,7 @@ $(document).ready(function(){
     $('[data-modal=subscribe]').on('click', function() {
         $('.overlay, #subscribe').fadeIn();
     });
-    $('.modal_close,').on('click', function() {
+    $('.modal_close').on('click', function() {
         $('.overlay, #subscribe').fadeOut();
     });
 });
