@@ -97,6 +97,46 @@
 			height: 50px
 			position: absolute
 
+.page
+	padding: 14px 0
+	&_header
+		height: 45px
+		position: relative
+	&_title
+		display: inline-block
+		font-size: 30px
+		color: $darkgrey_color
+		font-weight: 800
+		vertical-align: middle
+		&_block
+			display: inline-block
+			height: 21px
+			width: 8px
+			background-color: $main_color
+			margin: 0 0 6px
+			vertical-align: middle
+	&_search
+		margin-top: 0
+		&_icon
+			bottom: 8px
+		&_row
+			margin-top: 9px
+			align-items: center
+			font-size: 12px
+			font-weight: 200
+			color: $darkgrey_color
+		&_res
+	&_sort
+		text-align: right
+		a
+			color: $grey_color
+			transition: 0.2s all
+			&:hover
+				color: $second_color
+				text-decoration: none
+		a.page_sort_active
+			color: $main_color
+
 .menu
 	display: flex
 	justify-content: space-around
