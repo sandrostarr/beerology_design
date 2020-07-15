@@ -1,3 +1,4 @@
+//Появление\изчезание бургера
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.menu'),
     menuItem = document.querySelectorAll('.menu_item'),
@@ -78,10 +79,21 @@ $(document).ready(function(){
     });
 
 
+    //появление\исчезание модального окна
     $('[data-modal=subscribe]').on('click', function() {
         $('.overlay, #subscribe').fadeIn();
     });
     $('.modal_close').on('click', function() {
         $('.overlay, #subscribe').fadeOut();
     });
+
+
+    // Анимирование скролла по id (якори)
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
+       
+        $('html, body').animate({
+          scrollTop: $($(this).attr('href')).offset().top
+        }, 1000, 'swing');
+      });
 });
