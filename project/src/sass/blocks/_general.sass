@@ -200,7 +200,7 @@
 			list-style-type: none
 			padding-left: 0
 		&_item
-			a
+			&_link
 				font-size: 18px
 				line-height: 36px
 				font-weight: 400
@@ -209,6 +209,8 @@
 				&:hover
 					color: $second_color
 					text-decoration: none
+				&_active
+					color: $main_color
 
 .content
 	&_item
@@ -224,7 +226,10 @@
 				&:hover
 					text-decoration: none
 					color: $second_color
-
+	&_article
+		&_p
+			&_title
+				font-weight: 600
 
 .news
 	padding: 45px 0 45px 0
