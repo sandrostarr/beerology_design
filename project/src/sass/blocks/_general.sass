@@ -233,7 +233,7 @@
 	&_news
 		&_item
 			margin-bottom: 50px
-			&_tags
+			&_tags, &_tags a
 				font-size: 9px
 				font-weight: 300
 				text-transform: uppercase
@@ -242,19 +242,61 @@
 				font-size: 23px
 				font-weight: 600
 				line-height: 30px
+				transition: 0.2s all
+				color: $darkgrey_color
+				&:hover
+					color: $main_color
+					cursor: pointer
+					text-decoration: none
 			&_author
 				font-size: 10px
 				font-weight: 400
 				color: $darkgrey_color
-				margin-bottom: 40px
+				margin: 5px 0 40px
+				a
+					color: #298D9E
 			&_subline
 				position: absolute
 				bottom: 0
+				width: 90%
+				display: flex
+				justify-content: space-between
+				&_date
+					font-size: 14px
+					font-weight: 300
+				&_activity
+					font-size: 14px
+					&_likes
+						&::before
+							content: ''
+							position: absolute
+							display: block
+							height: 14px
+							width: 14px
+							right: 78px
+							top: 4px
+							background: url(../icons/activity/like.png) center center/cover no-repeat
+					&_views
+						margin-left: 40px
+						&::before
+							content: ''
+							position: absolute
+							display: block
+							height: 14px
+							width: 14px
+							right: 29px
+							top: 4px
+							background: url(../icons/activity/view.png) center center/cover no-repeat
 			&_img
 				height: 170px
 				background: url(../img/barrel-534392_960_720.jpg) center center/cover no-repeat
+				transition: 0.4s all
 				&_block
 					padding-left: 0
+				&:hover
+					opacity: 0.8
+					color: #000000
+					cursor: pointer
 				
 
 .news
