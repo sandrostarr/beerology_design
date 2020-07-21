@@ -289,7 +289,6 @@
 							background: url(../icons/activity/view.png) center center/cover no-repeat
 			&_img
 				height: 170px
-				background: url(../img/barrel-534392_960_720.jpg) center center/cover no-repeat
 				transition: 0.4s all
 				&_block
 					padding-left: 0
@@ -297,7 +296,26 @@
 					opacity: 0.8
 					color: #000000
 					cursor: pointer
-				
+			&_1 &_img
+				background: url(../img/barrel-534392_960_720.jpg) center center/cover no-repeat
+			&_2 &_img
+				background: url(../img/beer-3293692_960_720.jpg) center center/cover no-repeat
+			&_3 &_img
+				background: url(../img/274px-Bornemdubbel.jpg) center center/cover no-repeat
+			&_4 &_img
+				background: url(../img/beer-3786988_960_720.jpg) center center/cover no-repeat
+			&_5 &_img
+				background: url(../img/close-up-1838997_960_720.jpg) center center/cover no-repeat
+			&_6 &_img
+				background: url(../img/270px-Murphys.jpg) center center/cover no-repeat
+			&_7 &_img
+				background: url(../img/food-3147953_960_720.jpg) center center/cover no-repeat
+			&_8 &_img
+				background: url(../img/whiskey-315178_960_720.jpg) center center/cover no-repeat
+			&_9 &_img
+				background: url(../img/hof.jpg) center center/cover no-repeat
+			&_10 &_img
+				background: url(../img/barrel-534392_960_720.jpg) center center/cover no-repeat
 
 .news
 	padding: 45px 0 45px 0
@@ -540,6 +558,25 @@
 			color: $darkgrey_color
 			line-height: 25px
 			transition: 0.3s all
+
+.pagination
+	list-style-type: none
+	li
+		display: inline-block
+	&_item
+		color: black
+		float: left
+		padding: 8px 16px
+		text-decoration: none
+		&_active
+			border: 1px solid black
+			border-radius: 8px
+		&:hover
+			text-decoration: none
+			color: $darkgrey_color
+			&:not(.pagination_item_active)
+				background-color: #ddd
+				border-radius: 8px
 
 .footer
 	margin-top: 90px
