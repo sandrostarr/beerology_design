@@ -350,6 +350,89 @@
 			&_10 &_img
 				background: url(../img/barrel-534392_960_720.jpg) center center/cover no-repeat
 
+	&_countries
+		margin-top: 60px
+		a
+			text-decoration: none
+		&_item
+			margin-top: 20px
+			min-height: 200px
+			&:hover
+				& .content_countries_item_subtitle, .content_countries_item_country
+					color: $second_color
+					transition: 0.3s all
+				& .content_countries_item_img::before
+					background: rgba(0,0,0,0.6)
+					transition: 0.5s all
+			&_img
+				position: relative
+				height: 155px
+				&::before
+					content: ''
+					display: block
+					position: absolute
+					width: 100%
+					height: 100%
+					top: 0
+					left: 0
+					background: rgba(0,0,0,0.35)
+					transition: 0.5s all
+			&_1 .content_countries_item_img
+				background: url('../img/countries/89431-velikobritaniya-flag_soedinennyh_shtatov-sinij_cvet-krasnyj_cvet-tkan-2560x1440.jpg') center (center / cover) no-repeat
+			&_2 .content_countries_item_img
+				background: url('../img/countries/_135932-1327.jpg') center (center / cover) no-repeat
+			&_3 .content_countries_item_img
+				background: url('../img/countries/_76080-8374.jpg') center (center / cover) no-repeat
+			&_4 .content_countries_item_img
+				background: url('../img/countries/_1232-3065.jpg') center (center / cover) no-repeat
+			&_5 .content_countries_item_img
+				background: url('../img/countries/germany.jpg') center (center / cover) no-repeat
+			&_6 .content_countries_item_img
+				background: url('../img/countries/russia.jpg') center (center / cover) no-repeat
+			&_7 .content_countries_item_img
+				background: url('../img/countries/japan.jpg') center (center / cover) no-repeat
+			&_8 .content_countries_item_img
+				background: url('../img/countries/korea.jpg') center (center / cover) no-repeat
+			&_9 .content_countries_item_img
+				background: url('../img/countries/italy.jpg') center (center / cover) no-repeat
+			&_10 .content_countries_item_img
+				background: url('../img/countries/usa.jpg') center (center / cover) no-repeat
+			&_11 .content_countries_item_img
+				background: url('../img/countries/austria.jpg') center (center / cover) no-repeat
+			&_12 .content_countries_item_img
+				background: url('../img/countries/_76080-8374.jpg') center (center / cover) no-repeat
+			&_13 .content_countries_item_img
+				background: url('../img/countries/_1232-3065.jpg') center (center / cover) no-repeat
+			&_14 .content_countries_item_img
+				background: url('../img/countries/germany.jpg') center (center / cover) no-repeat
+			&_15 .content_countries_item_img
+				background: url('../img/countries/russia.jpg') center (center / cover) no-repeat
+			&_16 .content_countries_item_img
+				background: url('../img/countries/japan.jpg') center (center / cover) no-repeat
+			&_17 .content_countries_item_img
+				background: url('../img/countries/korea.jpg') center (center / cover) no-repeat
+			&_18 .content_countries_item_img
+				background: url('../img/countries/italy.jpg') center (center / cover) no-repeat
+			&_19 .content_countries_item_img
+				background: url('../img/countries/usa.jpg') center (center / cover) no-repeat
+			&_20 .content_countries_item_img
+				background: url('../img/countries/austria.jpg') center (center / cover) no-repeat
+	
+			&_subtitle
+				margin-top: 14px
+				font-size: 16px
+				font-weight: 700
+				color: $darkgrey_color
+				line-height: 25px
+				transition: 0.3s all
+			&_country
+				margin-top: 16px
+				font-size: 16px
+				font-weight: 600
+				color: $darkgrey_color
+				line-height: 25px
+				transition: 0.3s all
+
 .news
 	padding: 45px 0 45px 0
 	.row
