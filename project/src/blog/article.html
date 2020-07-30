@@ -152,29 +152,29 @@
                                         <div class="col-3">
                                             <span class="content_item_author_rates_blocks_title">вкус</span>
                                             <div class="content_item_author_rates_blocks_bar">
-                                                <div class="content_item_author_rates_blocks_bar_line"></div>
-                                                <span>7.3</span>
+                                                <div class="content_item_author_rates_blocks_bar_line" id="author_rate_bar_1"></div>
+                                                <span id="author_rate_1">7.3</span>
                                             </div>
                                         </div>
                                         <div class="col-3">
                                             <span class="content_item_author_rates_blocks_title">аромат</span>
                                             <div class="content_item_author_rates_blocks_bar">
-                                                <div class="content_item_author_rates_blocks_bar_line"></div>
-                                                <span>6.8</span>
+                                                <div class="content_item_author_rates_blocks_bar_line" id="author_rate_bar_2"></div>
+                                                <span id="author_rate_2">6.8</span>
                                             </div>
                                         </div>
                                         <div class="col-3">
                                             <span class="content_item_author_rates_blocks_title">внешний вид</span>
                                             <div class="content_item_author_rates_blocks_bar">
-                                                <div class="content_item_author_rates_blocks_bar_line"></div>
-                                                <span>5.1</span>
+                                                <div class="content_item_author_rates_blocks_bar_line" id="author_rate_bar_3"></div>
+                                                <span id="author_rate_3">5.1</span>
                                             </div>
                                         </div>
                                         <div class="col-3">
                                             <span class="content_item_author_rates_blocks_title">итого</span>
                                             <div class="content_item_author_rates_blocks_bar">
-                                                <div class="content_item_author_rates_blocks_bar_line"></div>
-                                                <span>6.4</span>
+                                                <div class="content_item_author_rates_blocks_bar_line" id="author_rate_bar_4"></div>
+                                                <span id="author_rate_4">6.4</span>
                                             </div>
                                         </div>
                                     </div>
@@ -324,5 +324,13 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="../js/slick.min.js"></script>
     <script src="../js/script.js"></script>
+
+    <script>
+        for (let i = 1; i <= 4; i++) { 
+            var rate = document.getElementById("author_rate_" + i).innerHTML;
+            var elem = document.getElementById("author_rate_bar_" + i);
+            elem.style.width = rate * 10 + '%';
+        }
+    </script>
 </body>
 </html>
