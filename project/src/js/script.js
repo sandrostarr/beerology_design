@@ -103,4 +103,10 @@ $(document).ready(function(){
         var elem = document.getElementById("author_rate_bar_" + i);
         elem.style.width = rate * 10 + '%';
     }
+
+    var rate1 = document.getElementById("author_rate_4").innerHTML;
+    var elem1 = document.getElementById("author_rate_bar_4");
+    var swag = rate1 * 40;
+    if (rate1 < 5) elem1.style.backgroundColor = 'rgba(200,' + swag + ',0,1)';
+    else elem1.style.backgroundColor = 'rgba(' + (200 - (swag-200)) + ',200,0,1)';
 });
