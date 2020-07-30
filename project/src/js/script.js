@@ -100,13 +100,20 @@ $(document).ready(function(){
 
     for (let i = 1; i <= 4; i++) { 
         var rate = document.getElementById("author_rate_" + i).innerHTML;
-        var elem = document.getElementById("author_rate_bar_" + i);
-        elem.style.width = rate * 10 + '%';
+        var line = document.getElementById("author_rate_bar_" + i);
+        line.style.width = rate * 10 + '%';
     }
 
-    var rate1 = document.getElementById("author_rate_4").innerHTML;
-    var elem1 = document.getElementById("author_rate_bar_4");
-    var swag = rate1 * 40;
-    if (rate1 < 5) elem1.style.backgroundColor = 'rgba(200,' + swag + ',0,1)';
-    else elem1.style.backgroundColor = 'rgba(' + (200 - (swag-200)) + ',200,0,1)';
+    var finalRate = document.getElementById("author_rate_4").innerHTML;
+    var toplineRate = document.getElementById("author_rate_bar_4");
+    var contentRate = document.getElementById("content_item_topline_rate");
+    var multiply = finalRate * 40;
+    if (finalRate < 5) {
+        toplineRate.style.backgroundColor = 'rgba(200,' + multiply + ',0,1)';
+        contentRate.style.borderColor = 'rgba(200,' + multiply + ',0,1)';
+    }
+    else {
+        toplineRate.style.backgroundColor = 'rgba(' + (200 - (multiply-200)) + ',200,0,1)';
+        contentRate.style.borderColor = 'rgba(' + (200 - (multiply-200)) + ',200,0,1)';
+    } 
 });
