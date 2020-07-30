@@ -96,4 +96,11 @@ $(document).ready(function(){
           scrollTop: $($(this).attr('href')).offset().top
         }, 1000, 'swing');
       });
+
+
+    for (let i = 1; i <= 4; i++) { 
+        var rate = document.getElementById("author_rate_" + i).innerHTML;
+        var elem = document.getElementById("author_rate_bar_" + i);
+        elem.style.width = rate * 10 + '%';
+    }
 });
