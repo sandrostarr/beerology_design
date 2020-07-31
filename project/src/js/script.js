@@ -98,7 +98,7 @@ $(document).ready(function(){
       });
 
 
-    for (let i = 1; i <= 4; i++) { 
+    for (let i = 1; i <= 3; i++) { 
         var rate = document.getElementById("author_rate_" + i).innerHTML;
         var line = document.getElementById("author_rate_bar_" + i);
         line.style.width = rate * 10 + '%';
