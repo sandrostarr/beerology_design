@@ -78,8 +78,22 @@
 
     .content
         &_item
+            h3
+                font-size: 20px
             &_img
                 height: 250px
+            &_topline
+                &_rate
+                    font-size: 20px
+                    padding: 4px
+                    border-width: 4px
+                    top: 7px
+            &_author
+                &_rates
+                    &_blocks
+                        .last_block
+                            margin-top: 30px
+
         &_news
             &_item
                 &_img
@@ -91,6 +105,15 @@
                     font-size: 8px
                     margin-bottom: 6px
 
+    .similar
+        &_news
+            &_item
+                &_img
+                    height: 160px
+                &_subtitle
+                    font-weight: 300
+                    font-size: 14px
+                    line-height: 20px
 
 @media (max-width: 767px)
     .menu
